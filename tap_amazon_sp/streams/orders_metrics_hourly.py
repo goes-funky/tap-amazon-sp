@@ -1,6 +1,7 @@
+
 from tap_amazon_sp.streams.stream import Stream
 from sp_api.api import Sales
-from sp_api.base import Granularity, SellingApiException
+from sp_api.base import Granularity
 
 
 class OrdersMetricsHourly(Stream):
