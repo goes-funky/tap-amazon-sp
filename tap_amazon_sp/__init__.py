@@ -3,7 +3,6 @@ import os
 import json
 import singer
 from singer import utils, metadata, Transformer
-from singer.schema import Schema
 
 from tap_amazon_sp.context import Context
 
@@ -13,28 +12,10 @@ REQUIRED_CONFIG_KEYS = []
 LOGGER = singer.get_logger()
 
 
-#set env variable before loading models brcause sp package sets client once imported
-def set_env_variables():
-    args = utils.parse_args(REQUIRED_CONFIG_KEYS)
-    Context.config = args.config
-    os.environ["SP_API_REFRESH_TOKEN"] = Context.config["refresh_token"]
-    os.environ["LWA_APP_ID"] = Context.config["lwa_app_id"]
-    os.environ["LWA_CLIENT_SECRET"] = Context.config["lwa_client_secret"]
-    os.environ["SP_API_ROLE_ARN"] = Context.config["role_arn"]
-    os.environ["SP_API_ACCESS_KEY"] = Context.config["aws_access_key_id"]
-    os.environ["SP_API_SECRET_KEY"] = Context.config["aws_secret_access_key"]
-
-
-set_env_variables()
-
-
 def set_context_streams():
     from tap_amazon_sp.streams import models
     for model in models:
         Context.stream_objects[model.name] = model
-
-
-set_context_streams()
 
 
 def get_abs_path(path):
@@ -147,12 +128,23 @@ def sync():
     return
 
 
+def set_env_variables():
+    os.environ["SP_API_REFRESH_TOKEN"] = Context.config["refresh_token"]
+    os.environ["LWA_APP_ID"] = Context.config["lwa_app_id"]
+    os.environ["LWA_CLIENT_SECRET"] = Context.config["lwa_client_secret"]
+    os.environ["SP_API_ROLE_ARN"] = Context.config["role_arn"]
+    os.environ["SP_API_ACCESS_KEY"] = Context.config["aws_access_key_id"]
+    os.environ["SP_API_SECRET_KEY"] = Context.config["aws_secret_access_key"]
+
+
 @utils.handle_top_exception(LOGGER)
 def main():
     # Parse command line arguments
     args = utils.parse_args(REQUIRED_CONFIG_KEYS)
     Context.tap_start = utils.now()
+    Context.config = args.config
     set_env_variables()
+    set_context_streams()
     # If discover flag was passed, run discovery mode and dump output to stdout
     if args.discover:
         catalog = discover()

@@ -1,10 +1,39 @@
 import datetime
+import functools
+
+import backoff
 import singer
+from sp_api.base import SellingApiException
+
 from tap_amazon_sp.context import Context
 from singer import metrics, utils
 import abc
 
 DATE_WINDOW_SIZE = 1
+
+
+def quota_error_handling(fnc):
+    @backoff.on_exception(backoff.expo,
+                          SellingApiException,
+                          # No jitter as we want a constant value
+                          jitter=None,
+                          max_value=4
+                          )
+    @functools.wraps(fnc)
+    def wrapper(*args, **kwargs):
+        return fnc(*args, **kwargs)
+
+    return wrapper
+
+
+def is_not_status_code_fn(status_code):
+    def gen_fn(exc):
+        if getattr(exc, 'code', None) and exc.code not in status_code:
+            return True
+        # Retry other errors up to the max
+        return False
+
+    return gen_fn
 
 
 class Stream:
@@ -51,15 +80,16 @@ class Stream:
                 updated_at_max = stop_time
             singer.log_info("getting from %s - %s", updated_at_min,
                             updated_at_max)
-            query_params = {
-                "start_date": updated_at_min,
-                "end_date": updated_at_max
-            }
 
-            objects = self.get_data(query_params)
+            objects = self.get_data(updated_at_min, updated_at_max)
 
             for object in objects:
                 yield object
+
+            Context.state.get('bookmarks', {}).get(self.name, {}).pop('since_id', None)
+            self.update_bookmark(utils.strftime(updated_at_max))
+
+            updated_at_min = updated_at_max + datetime.timedelta(seconds=1)
 
     def sync(self):
         """Yield's processed SDK object dicts to the caller.
@@ -70,7 +100,11 @@ class Stream:
         for obj in self.get_objects():
             yield obj
 
-    #implemented by each stream class
+    # implemented by each stream class
     @abc.abstractmethod
-    def get_data(self, query_params) -> iter:
+    def call_api(self, start, end) -> iter:
         return []
+
+    @quota_error_handling
+    def get_data(self, start, end):
+        return self.call_api(start, end)
