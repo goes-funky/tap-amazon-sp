@@ -9,7 +9,7 @@ class OrdersData(Stream):
     replication_key = "interval"
     replication_method = "FULL_IMPORT"
 
-    def call_api(self, start, end) -> iter:
+    def call_api(self, **kwargs) -> iter:
         orders = Orders()
-        data = orders.get_orders(CreatedAfter=start.isoformat(), CreatedBefore=end.isoformat())
+        data = orders.get_orders(CreatedAfter=kwargs["start"].isoformat(), CreatedBefore=kwargs["end"].isoformat())
         return data.payload
