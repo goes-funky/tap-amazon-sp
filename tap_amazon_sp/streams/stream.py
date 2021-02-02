@@ -36,6 +36,7 @@ def is_not_status_code_fn(status_code):
     return gen_fn
 
 
+
 class Stream:
     # Used for bookmarking and stream identification. Is overridden by
     # subclasses to change the bookmark key.
@@ -47,6 +48,7 @@ class Stream:
     replication_object = None
     # Status parameter override option
     status_key = None
+    skip_hour = False
 
     def get_bookmark(self):
         bookmark = (singer.get_bookmark(Context.state,
@@ -70,7 +72,7 @@ class Stream:
         )
         singer.write_state(Context.state)
 
-    def get_objects(self):
+    def sync(self):
         updated_at_min = self.get_bookmark()
         stop_time = singer.utils.now().replace(microsecond=0)
         date_window_size = float(Context.config.get("date_window_size", DATE_WINDOW_SIZE))
@@ -81,7 +83,7 @@ class Stream:
             singer.log_info("getting from %s - %s", updated_at_min,
                             updated_at_max)
 
-            objects = self.get_data(updated_at_min, updated_at_max)
+            objects = self.call_api(start=updated_at_min, end=updated_at_max)
 
             for object in objects:
                 yield object
@@ -89,22 +91,13 @@ class Stream:
             Context.state.get('bookmarks', {}).get(self.name, {}).pop('since_id', None)
             self.update_bookmark(utils.strftime(updated_at_max))
 
-            updated_at_min = updated_at_max + datetime.timedelta(seconds=1)
+            skip_time = datetime.timedelta(seconds=1)
+            if self.skip_hour:
+                skip_time = datetime.timedelta(hours=1)
 
-    def sync(self):
-        """Yield's processed SDK object dicts to the caller.
-
-        This is the default implementation. Get's all of self's objects
-        and calls to_dict on them with no further processing.
-        """
-        for obj in self.get_objects():
-            yield obj
+            updated_at_min = updated_at_max + skip_time
 
     # implemented by each stream class
     @abc.abstractmethod
-    def call_api(self, start, end) -> iter:
+    def call_api(self, **kwargs) -> iter:
         return []
-
-    @quota_error_handling
-    def get_data(self, start, end):
-        return self.call_api(start, end)
