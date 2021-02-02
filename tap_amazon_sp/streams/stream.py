@@ -3,7 +3,7 @@ import functools
 
 import backoff
 import singer
-from sp_api.base import SellingApiException
+from sp_api.base import SellingApiRequestThrottledException
 
 from tap_amazon_sp.context import Context
 from singer import metrics, utils
@@ -14,7 +14,7 @@ DATE_WINDOW_SIZE = 1
 
 def quota_error_handling(fnc):
     @backoff.on_exception(backoff.expo,
-                          SellingApiException,
+                          SellingApiRequestThrottledException,
                           # No jitter as we want a constant value
                           jitter=None,
                           max_value=4

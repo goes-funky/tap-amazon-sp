@@ -6,6 +6,7 @@ class InventorySummary(Stream):
     replication_method = "FULL_IMPORT"
     key_properties = []
 
+    #still under construction
     def call_api(self, **kwargs) -> iter:
         inventories = Inventories()
         params = {}
