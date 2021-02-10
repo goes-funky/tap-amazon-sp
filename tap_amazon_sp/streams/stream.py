@@ -36,7 +36,6 @@ def is_not_status_code_fn(status_code):
     return gen_fn
 
 
-
 class Stream:
     # Used for bookmarking and stream identification. Is overridden by
     # subclasses to change the bookmark key.
@@ -74,7 +73,10 @@ class Stream:
 
     def sync(self):
         updated_at_min = self.get_bookmark()
-        stop_time = singer.utils.now().replace(microsecond=0)
+
+        # subtracting two minutes because amazon complains if its really close to now
+        stop_time = singer.utils.now().replace(microsecond=0) - datetime.timedelta(minutes=2)
+
         date_window_size = float(Context.config.get("date_window_size", DATE_WINDOW_SIZE))
         while updated_at_min < stop_time:
             updated_at_max = updated_at_min + datetime.timedelta(days=date_window_size)
@@ -82,11 +84,15 @@ class Stream:
                 updated_at_max = stop_time
             singer.log_info("getting from %s - %s", updated_at_min,
                             updated_at_max)
+            next_token = None
+            while True:
+                objects, next_token = self.call_api(start=updated_at_min, end=updated_at_max, nextToken=next_token)
 
-            objects = self.call_api(start=updated_at_min, end=updated_at_max)
+                for object in objects:
+                    yield object
 
-            for object in objects:
-                yield object
+                if next_token is None:
+                    break
 
             Context.state.get('bookmarks', {}).get(self.name, {}).pop('since_id', None)
             self.update_bookmark(utils.strftime(updated_at_max))
@@ -97,7 +103,7 @@ class Stream:
 
             updated_at_min = updated_at_max + skip_time
 
-    # implemented by each stream class
+    # implemented by each stream class, returns data and next token if there is
     @abc.abstractmethod
-    def call_api(self, **kwargs) -> iter:
-        return []
+    def call_api(self, **kwargs):
+        return [], None
