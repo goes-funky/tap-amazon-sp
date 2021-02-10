@@ -76,6 +76,13 @@
       ],
       "format": "date-time"
     },
+    "PurchaseDate": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
     "MarketplaceId": {
       "type": [
         "null",

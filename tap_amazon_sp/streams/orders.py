@@ -9,8 +9,8 @@ import singer
 class OrdersData(Stream):
     name = "orders"
     api_access_key = "Orders"
-    key_properties = []
-    replication_key = "interval"
+    key_properties = ["AmazonOrderId"]
+    replication_key = "PurchaseDate"
     replication_method = "INCREMENTAL"
 
     def call_api(self, **kwargs):
