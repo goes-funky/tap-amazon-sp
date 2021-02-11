@@ -116,7 +116,10 @@ def sync():
             Context.state['bookmarks'] = {}
 
         Context.state['bookmarks']['currently_sync_stream'] = stream_id
-        stream.set_marketplace(get_mapped_marketplace("US"))
+
+        marketplace_code = Context.config.get("marketplace_code", "US")
+
+        stream.set_marketplace(get_mapped_marketplace(marketplace_code))
 
         with Transformer() as transformer:
             for rec in stream.sync():
@@ -144,16 +147,18 @@ def set_env_variables():
     os.environ["SP_API_SECRET_KEY"] = Context.config["aws_secret_access_key"]
 
 
-def get_mapped_marketplace(country_code="CA"):
+def get_mapped_marketplace(country_code="US"):
     markets = {
         "US": Marketplaces.US,
         "DE": Marketplaces.DE,
         "MX": Marketplaces.MX,
-        "CA":Marketplaces.CA
+        "CA": Marketplaces.CA
     }
+
+    if country_code not in markets:
+        raise Exception("Wrong Country Code")
+
     return markets[country_code]
-
-
 
 
 @utils.handle_top_exception(LOGGER)
