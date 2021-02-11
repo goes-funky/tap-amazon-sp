@@ -1,0 +1,67 @@
+{
+  "type": "object",
+  "properties": {
+    "AmazonOrderId": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "ASIN": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "IsGift": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "OrderItemId": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "QuantityOrdered": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "QuantityShipped": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "SellerSKU": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Title": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "ProductInfo": {
+      "type": [
+        "null",
+        "object"
+      ],
+      "properties": {
+        "NumberOfItems": {
+          "type": [
+            "null",
+            "string"
+          ]
+        }
+      }
+    }
+  }
+}

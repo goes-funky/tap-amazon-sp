@@ -2,7 +2,7 @@ import datetime
 
 from sp_api.api import Orders
 
-from tap_amazon_sp.streams.stream import Stream
+from tap_amazon_sp.streams.stream import Stream, quota_error_handling
 import singer
 
 
@@ -13,6 +13,7 @@ class OrdersData(Stream):
     replication_key = "PurchaseDate"
     replication_method = "INCREMENTAL"
 
+    @quota_error_handling
     def call_api(self, **kwargs):
         orders = Orders()
         query_params = self.get_query_params(kwargs)

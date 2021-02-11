@@ -151,23 +151,5 @@
         "array"
       ]
     }
-  },
-  "SellerOrderId": {
-    "type": [
-      "null",
-      "string"
-    ]
-  },
-  "ShipServiceLevel": {
-    "type": [
-      "null",
-      "string"
-    ]
-  },
-  "ShipmentServiceLevelCategory": {
-    "type": [
-      "null",
-      "string"
-    ]
   }
 }
