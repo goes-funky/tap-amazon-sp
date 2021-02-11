@@ -14,4 +14,4 @@ class OrdersMetricsHourly(Stream):
         sales = Sales()
         data = sales.get_order_metrics(interval=(kwargs["start"].isoformat(), kwargs["end"].isoformat()),
                                        granularity=Granularity.HOUR)
-        return data.payload
+        return data.payload, None
