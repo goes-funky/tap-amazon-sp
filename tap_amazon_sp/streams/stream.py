@@ -94,17 +94,15 @@ class Stream:
                 if next_token is None:
                     break
 
-            Context.state.get('bookmarks', {}).get(self.name, {}).pop('since_id', None)
-
-            # TODO for state save with 1 second diff
-
-            self.update_bookmark(utils.strftime(updated_at_max))
 
             skip_time = datetime.timedelta(seconds=1)
             if self.skip_hour:
                 skip_time = datetime.timedelta(hours=1)
 
             updated_at_min = updated_at_max + skip_time
+
+            self.update_bookmark(utils.strftime(updated_at_min))
+
 
     # implemented by each stream class, returns data and next token if there is
     @abc.abstractmethod

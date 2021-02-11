@@ -125,6 +125,10 @@ def sync():
                                     rec,
                                     time_extracted=extraction_time)
                 Context.counts[stream_id] += 1
+
+            Context.state['bookmarks'].pop('currently_sync_stream')
+            singer.write_state(Context.state)
+
     return
 
 
