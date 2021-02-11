@@ -9,6 +9,8 @@ class ChildStream(Stream):
     def sync(self):
         selected_parent = Context.stream_objects[self.parent_name]()
         selected_parent.name = self.name
+        selected_parent.set_marketplace(self.market_place)
+
         next_token = None
         for parent_obj in selected_parent.sync():
             while True:

@@ -3,7 +3,8 @@ import functools
 
 import backoff
 import singer
-from sp_api.base import SellingApiRequestThrottledException
+from sp_api.api import Sellers
+from sp_api.base import SellingApiRequestThrottledException, Marketplaces
 
 from tap_amazon_sp.context import Context
 from singer import metrics, utils
@@ -48,6 +49,10 @@ class Stream:
     # Status parameter override option
     status_key = None
     skip_hour = False
+    market_place = Marketplaces.US
+
+    def set_marketplace(self, market_place):
+        self.market_place = market_place
 
     def get_bookmark(self):
         bookmark = (singer.get_bookmark(Context.state,
@@ -94,7 +99,6 @@ class Stream:
                 if next_token is None:
                     break
 
-
             skip_time = datetime.timedelta(seconds=1)
             if self.skip_hour:
                 skip_time = datetime.timedelta(hours=1)
@@ -102,7 +106,6 @@ class Stream:
             updated_at_min = updated_at_max + skip_time
 
             self.update_bookmark(utils.strftime(updated_at_min))
-
 
     # implemented by each stream class, returns data and next token if there is
     @abc.abstractmethod

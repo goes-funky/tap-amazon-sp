@@ -1,6 +1,7 @@
 import datetime
 
 from sp_api.api import Orders
+from sp_api.base import Client, Marketplaces
 
 from tap_amazon_sp.streams.stream import Stream, quota_error_handling
 import singer
@@ -15,7 +16,7 @@ class OrdersData(Stream):
 
     @quota_error_handling
     def call_api(self, **kwargs):
-        orders = Orders()
+        orders = Orders(marketplace=self.market_place)
         query_params = self.get_query_params(kwargs)
 
         data = orders.get_orders(**query_params)
