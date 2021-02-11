@@ -3,6 +3,7 @@ import os
 import json
 import singer
 from singer import utils, metadata, Transformer
+from sp_api.base import Marketplaces
 
 from tap_amazon_sp.context import Context
 
@@ -115,6 +116,8 @@ def sync():
             Context.state['bookmarks'] = {}
 
         Context.state['bookmarks']['currently_sync_stream'] = stream_id
+        stream.set_marketplace(get_mapped_marketplace("US"))
+
         with Transformer() as transformer:
             for rec in stream.sync():
                 extraction_time = singer.utils.now()
@@ -139,6 +142,18 @@ def set_env_variables():
     os.environ["SP_API_ROLE_ARN"] = Context.config["role_arn"]
     os.environ["SP_API_ACCESS_KEY"] = Context.config["aws_access_key_id"]
     os.environ["SP_API_SECRET_KEY"] = Context.config["aws_secret_access_key"]
+
+
+def get_mapped_marketplace(country_code="CA"):
+    markets = {
+        "US": Marketplaces.US,
+        "DE": Marketplaces.DE,
+        "MX": Marketplaces.MX,
+        "CA":Marketplaces.CA
+    }
+    return markets[country_code]
+
+
 
 
 @utils.handle_top_exception(LOGGER)
