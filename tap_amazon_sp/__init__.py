@@ -152,7 +152,9 @@ def get_mapped_marketplace(country_code="US"):
         "US": Marketplaces.US,
         "DE": Marketplaces.DE,
         "MX": Marketplaces.MX,
-        "CA": Marketplaces.CA
+        "CA": Marketplaces.CA,
+        "UK": Marketplaces.UK,
+        "FR": Marketplaces.FR
     }
 
     if country_code not in markets:
