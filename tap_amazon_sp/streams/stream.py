@@ -4,7 +4,7 @@ import functools
 import backoff
 import singer
 from sp_api.api import Sellers
-from sp_api.base import SellingApiRequestThrottledException, Marketplaces
+from sp_api.base import SellingApiRequestThrottledException, Marketplaces, SellingApiServerException
 
 from tap_amazon_sp.context import Context
 from singer import metrics, utils
@@ -12,8 +12,25 @@ import abc
 
 DATE_WINDOW_SIZE = 1
 
+LOGGER = singer.get_logger()
+
+MAX_RETRIES = 10
+
+
+def retry_handler(details):
+    LOGGER.info("Received 500 or retryable error -- Retry %s/%s",
+                details['tries'], MAX_RETRIES)
+
 
 def quota_error_handling(fnc):
+    @backoff.on_exception(backoff.expo,
+                          SellingApiServerException,
+                          # No jitter as we want a constant value
+                          jitter=None,
+                          max_value=4,
+                          max_tries=MAX_RETRIES,
+                          on_backoff=retry_handler,
+                          )
     @backoff.on_exception(backoff.expo,
                           SellingApiRequestThrottledException,
                           # No jitter as we want a constant value
