@@ -140,6 +140,7 @@ def sync():
 
 def set_env_variables():
     os.environ["SP_API_REFRESH_TOKEN"] = Context.config["refresh_token"]
+
     os.environ["LWA_APP_ID"] = Context.config["lwa_app_id"]
     os.environ["LWA_CLIENT_SECRET"] = Context.config["lwa_client_secret"]
     os.environ["SP_API_ROLE_ARN"] = Context.config["role_arn"]

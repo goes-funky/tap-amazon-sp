@@ -15,7 +15,7 @@ class OrderItems(ChildStream):
 
     @quota_error_handling
     def call_api(self, **kwargs):
-        orders = Orders()
+        orders = Orders(marketplace=self.market_place)
 
         data = orders.get_order_items(kwargs["parent_id"])
 
