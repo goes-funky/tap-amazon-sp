@@ -62,6 +62,106 @@
           ]
         }
       }
+    },
+    "ItemTax": {
+      "type": [
+        "null",
+        "object"
+      ],
+      "properties": {
+        "CurrencyCode": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "Amount": {
+          "type": [
+            "null",
+            "number"
+          ]
+        }
+      }
+    },
+    "ItemPrice": {
+      "type": [
+        "null",
+        "object"
+      ],
+      "properties": {
+        "CurrencyCode": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "Amount": {
+          "type": [
+            "null",
+            "number"
+          ]
+        }
+      }
+    },
+    "PromotionDiscount": {
+      "type": [
+        "null",
+        "object"
+      ],
+      "properties": {
+        "CurrencyCode": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "Amount": {
+          "type": [
+            "null",
+            "number"
+          ]
+        }
+      }
+    },
+    "PromotionDiscountTax": {
+      "type": [
+        "null",
+        "object"
+      ],
+      "properties": {
+        "CurrencyCode": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "Amount": {
+          "type": [
+            "null",
+            "number"
+          ]
+        }
+      }
+    },
+    "TaxCollection": {
+      "type": [
+        "null",
+        "object"
+      ],
+      "properties": {
+        "Model": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "ResponsibleParty": {
+          "type": [
+            "null",
+            "string"
+          ]
+        }
+      }
     }
   }
 }
