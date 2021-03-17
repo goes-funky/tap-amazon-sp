@@ -1,0 +1,168 @@
+{
+  "type": "object",
+  "properties": {
+    "date_time": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "settlement_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "order_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "sku": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "description": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "quantity": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "marketplace": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "account_type": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "fulfillment": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "order_city": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "order_state": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "order_postal": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "tax_collection_model": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "product_sales": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "product_sales_tax": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "shipping_credits": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "gift_wrap_credits": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "giftwrap_credits_tax": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "promotional_rebates": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "promotional_rebates_tax": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "marketplace_withheld_tax": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "selling_fees": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "fba_fees": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "other_transaction_fees": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "other": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "total": {
+      "type": [
+        "null",
+        "number"
+      ]
+    }
+  }
+}

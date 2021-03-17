@@ -128,3 +128,6 @@ class Stream:
     @abc.abstractmethod
     def call_api(self, **kwargs):
         return [], None
+
+    def transform_fields(self, obj):
+        return obj
