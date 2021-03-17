@@ -1,11 +1,12 @@
 {
   "type": "object",
   "properties": {
-    "date/time": {
+    "date_time": {
       "type": [
         "null",
         "string"
-      ]
+      ],
+      "format": "date-time"
     },
     "settlement_id": {
       "type": [
