@@ -12,7 +12,7 @@ setup(
     install_requires=[
         # NB: Pin these to a more specific version for tap reliability
         "singer-python==5.9.1",
-        "python-amazon-sp-api==0.1.9"
+        "python-amazon-sp-api==0.3.3"
     ],
     entry_points="""
     [console_scripts]
