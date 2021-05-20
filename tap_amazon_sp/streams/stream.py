@@ -27,7 +27,7 @@ def quota_error_handling(fnc):
                           SellingApiServerException,
                           # No jitter as we want a constant value
                           jitter=None,
-                          max_value=4,
+                          max_value=32,
                           max_tries=MAX_RETRIES,
                           on_backoff=retry_handler,
                           )
@@ -35,7 +35,7 @@ def quota_error_handling(fnc):
                           SellingApiRequestThrottledException,
                           # No jitter as we want a constant value
                           jitter=None,
-                          max_value=4
+                          max_value=32
                           )
     @functools.wraps(fnc)
     def wrapper(*args, **kwargs):
