@@ -6,7 +6,7 @@ from sp_api.base import Granularity
 class OrdersMetricsHourly(Stream):
     name = "orders_metrics_hourly"
     key_properties = []
-    replication_method = "FULL_IMPORT"
+    replication_method = "FULL_TABLE"
     skip_hour = True
 
     @quota_error_handling

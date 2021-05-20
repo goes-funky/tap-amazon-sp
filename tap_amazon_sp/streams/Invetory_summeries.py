@@ -3,7 +3,7 @@ from sp_api.api import Inventories
 
 
 class InventorySummary(Stream):
-    replication_method = "FULL_IMPORT"
+    replication_method = "FULL_TABLE"
     key_properties = []
 
     #still under construction
