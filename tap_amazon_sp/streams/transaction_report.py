@@ -9,7 +9,7 @@ class TransactionReport(Report):
     report_type = 'GET_DATE_RANGE_FINANCIAL_TRANSACTION_DATA'
     name = "transactions_report"
     api_access_key = None
-    replication_method = "FULL_IMPORT"
+    replication_method = "FULL_TABLE"
     key_properties = []
 
     def clean_data(self, data):
