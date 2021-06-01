@@ -1,0 +1,157 @@
+{
+  "type": [
+    "null",
+    "object"
+  ],
+  "properties": {
+    "settlement_id": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "settlement_start_date": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "settlement_end_date": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "deposit_date": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "total_amount": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "currency": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "transaction_type": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "order_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "merchant_order_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "adjustment_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "shipment_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "marketplace_name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "amount_type": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "amount_description": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "amount": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "fulfillment_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "posted_date": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date"
+    },
+    "posted_date_time": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "order_item_code": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "merchant_order_item_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "merchant_adjustment_item_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "sku": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "quantity_purchased": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "promotion_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  }
+}

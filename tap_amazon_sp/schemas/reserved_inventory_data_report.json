@@ -1,0 +1,56 @@
+{
+  "type": [
+    "null",
+    "object"
+  ],
+  "properties": {
+    "sku": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "fnsku": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "asin": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "product_name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "reserved_qty": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "reserved_customerorders": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "reserved_fc_transfers": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "reserved_fc_processing": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    }
+  }
+}

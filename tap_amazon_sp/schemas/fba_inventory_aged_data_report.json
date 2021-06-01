@@ -1,0 +1,231 @@
+{
+  "type": [
+    "null",
+    "object"
+  ],
+  "properties": {
+    "snapshot_date": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date"
+    },
+    "sku": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "fnsku": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "asin": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "product_name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "condition": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "avaliable_quantity_sellable": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "qty_with_removals_in_progress": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "inv_age_0_to_90_days": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "inv_age_91_to_180_days": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "inv_age_181_to_270_days": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "inv_age_271_to_365_days": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "inv_age_365_plus_days": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "currency": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "qty_to_be_charged_ltsf_6_mo": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "projected_ltsf_6_mo": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "qty_to_be_charged_ltsf_12_mo": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "projected_ltsf_12_mo": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "units_shipped_last_7_days": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "units_shipped_last_30_days": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "units_shipped_last_60_days": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "units_shipped_last_90_days": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "alert": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "your_price": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "sales_price": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "lowest_price_new": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "lowest_price_used": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "recommended_action": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "healthy_inventory_level": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "recommended_sales_price": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "recommended_sale_duration_days": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "recommended_removal_quantity": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "estimated_cost_savings_of_recommended_actions": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "sell_through": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "item_volume": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "volume_units": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "storage_type": {
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  }
+}

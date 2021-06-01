@@ -1,0 +1,44 @@
+{
+  "type": [
+    "null",
+    "object"
+  ],
+  "properties": {
+    "seller_sku": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "fulfillment_channel_sku": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "asin": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "condition_type": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "warehouse_condition_code": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "quantity_available": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    }
+  }
+}

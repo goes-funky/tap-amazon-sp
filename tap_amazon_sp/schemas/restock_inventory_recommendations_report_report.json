@@ -1,0 +1,153 @@
+{
+  "type": [
+    "null",
+    "object"
+  ],
+  "properties": {
+    "country": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "product_name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "fnsku": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "merchant_sku": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "asin": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "condition": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "supplier": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "supplier_part_no.": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "currency_code": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "price": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "sales_last_30_days": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "units_sold_last_30_days": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "total_units": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "inbound": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "available": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "fc_transfer": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "fc_processing": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "customer_order": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "unfulfillable": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "fulfilled_by": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "days_of_supply": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "alert": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "recommended_replenishment_qty": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "recommended_ship_date": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    }
+  }
+}

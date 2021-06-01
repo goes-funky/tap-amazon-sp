@@ -1,0 +1,105 @@
+{
+  "type": [
+    "null",
+    "object"
+  ],
+  "properties": {
+    "snapshot_date": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "sku": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "fnsku": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "asin": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "product_name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "condition": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "sellable_quantity": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "sellable_271_365_days": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "sellable_365+_days": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "sellable_removal_quantity": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "unsellable_quantity": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "unsellable_0_7_days": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "unsellable_8_60_days": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "unsellable_61_90_days": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "sellable_121_180_days": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "sellable_181_270_days": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    }
+  }
+}

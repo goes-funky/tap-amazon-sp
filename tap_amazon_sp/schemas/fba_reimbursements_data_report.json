@@ -1,0 +1,117 @@
+{
+  "type": [
+    "null",
+    "object"
+  ],
+  "properties": {
+    "approval_date": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "reimbursement_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "case_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "amazon_order_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "reason": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "sku": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "fnsku": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "asin": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "product_name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "condition": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "currency_unit": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "amount_per_unit": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "amount_total": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "quantity_reimbursed_cash": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "quantity_reimbursed_inventory": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "quantity_reimbursed_total": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "original_reimbursement_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "original_reimbursement_type": {
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  }
+}

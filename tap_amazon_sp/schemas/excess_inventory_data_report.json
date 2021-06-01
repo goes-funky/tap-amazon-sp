@@ -1,0 +1,165 @@
+{
+  "type": [
+    "null",
+    "object"
+  ],
+  "properties": {
+    "date": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date"
+    },
+    "msku": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "fnsku": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "asin": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "product_name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "condition": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "fulfilled_by": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "total_quantity_sellable": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "estimated_excess": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "days_of_supply": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "excess_threshold": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "units_sold___last_7_days": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "units_sold___last_30_days": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "units_sold___last_60_days": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "units_sold___last_90_days": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "alert": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "your_price": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "lowest_price_includes_shipping": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "buybox_price": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "recommended_action": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "healthy_inventory_level": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "recommended_sales_price": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "recommended_sale_duration_days": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "estimated_total_storage_cost": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "recommended_removal_quantity": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "estimated_cost_savings_of_removal": {
+      "type": [
+        "null",
+        "number"
+      ]
+    }
+  }
+}

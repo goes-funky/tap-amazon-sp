@@ -1,0 +1,177 @@
+{
+  "type": [
+    "null",
+    "object"
+  ],
+  "properties": {
+    "item_name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "item_description": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "listing_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "seller_sku": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "price": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "quantity": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "open_date": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "image_url": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "item_is_marketplace": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "product_id_type": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "zshop_shipping_fee": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "item_note": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "item_condition": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "zshop_category1": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "zshop_browse_path": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "zshop_storefront_feature": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "asin1": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "asin2": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "asin3": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "will_ship_internationally": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "expedited_shipping": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "zshop_boldface": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "product_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "bid_for_featured_placement": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "add_delete": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "pending_quantity": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "fulfillment_channel": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "merchant_shipping_group": {
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  }
+}

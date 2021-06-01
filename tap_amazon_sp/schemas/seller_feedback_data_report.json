@@ -1,0 +1,45 @@
+{
+  "type": [
+    "null",
+    "object"
+  ],
+  "properties": {
+    "date": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "rating": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "comments": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "response": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "order_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "rater_email": {
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  }
+}

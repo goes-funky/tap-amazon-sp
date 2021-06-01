@@ -1,0 +1,134 @@
+{
+  "type": [
+    "null",
+    "object"
+  ],
+  "properties": {
+    "sku": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "fnsku": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "asin": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "product_name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "condition": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "your_price": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "mfn_listing_exists": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "mfn_fulfillable_quantity": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "afn_listing_exists": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "afn_warehouse_quantity": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "afn_fulfillable_quantity": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "afn_unsellable_quantity": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "afn_reserved_quantity": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "afn_total_quantity": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "per_unit_volume": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "afn_inbound_working_quantity": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "afn_inbound_shipped_quantity": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "afn_inbound_receiving_quantity": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "afn_researching_quantity": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "afn_reserved_future_supply": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "afn_future_supply_buyable": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    }
+  }
+}

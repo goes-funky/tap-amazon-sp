@@ -1,0 +1,188 @@
+{
+  "type": [
+    "null",
+    "object"
+  ],
+  "properties": {
+    "sku": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "fnsku": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "asin": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "product_name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "product_group": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "brand": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "fulfilled_by": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "your_price": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "sales_price": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "longest_side": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "median_side": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "shortest_side": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "length_and_girth": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "unit_of_dimension": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "item_package_weight": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "unit_of_weight": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "product_size_tier": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "currency": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "estimated_fee_total": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "estimated_referral_fee_per_unit": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "estimated_variable_closing_fee": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "estimated_order_handling_fee_per_order": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "estimated_pick_pack_fee_per_unit": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "estimated_weight_handling_fee_per_unit": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "expected_fulfillment_fee_per_unit": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "estimated_future_fee_current_selling_on_amazon_+_future_fulfillment_fees": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "estimated_future_order_handling_fee_per_order": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "estimated_future_pick_pack_fee_per_unit": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "estimated_future_weight_handling_fee_per_unit": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "expected_future_fulfillment_fee_per_unit": {
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  }
+}

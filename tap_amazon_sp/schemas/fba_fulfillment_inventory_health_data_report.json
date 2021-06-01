@@ -1,0 +1,291 @@
+{
+  "type": [
+    "null",
+    "object"
+  ],
+  "properties": {
+    "snapshot_date": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "sku": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "fnsku": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "asin": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "product_name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "condition": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "sales_rank": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "product_group": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "total_quantity": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "sellable_quantity": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "unsellable_quantity": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "inv_age_0_to_90_days": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "inv_age_91_to_180_days": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "inv_age_181_to_270_days": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "inv_age_271_to_365_days": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "inv_age_365_plus_days": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "units_shipped_last_24_hrs": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "units_shipped_last_7_days": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "units_shipped_last_30_days": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "units_shipped_last_90_days": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "units_shipped_last_180_days": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "units_shipped_last_365_days": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "weeks_of_cover_t7": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "weeks_of_cover_t30": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "weeks_of_cover_t90": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "weeks_of_cover_t180": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "weeks_of_cover_t365": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "num_afn_new_sellers": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "num_afn_used_sellers": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "currency": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "your_price": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "sales_price": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "lowest_afn_new_price": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "lowest_afn_used_price": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "lowest_mfn_new_price": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "lowest_mfn_used_price": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "qty_to_be_charged_ltsf_12_mo": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "qty_in_long_term_storage_program": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "qty_with_removals_in_progress": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "projected_ltsf_12_mo": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "per_unit_volume": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "is_hazmat": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "in_bound_quantity": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "asin_limit": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "inbound_recommend_quantity": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "qty_to_be_charged_ltsf_6_mo": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "projected_ltsf_6_mo": {
+      "type": [
+        "null",
+        "number"
+      ]
+    }
+  }
+}

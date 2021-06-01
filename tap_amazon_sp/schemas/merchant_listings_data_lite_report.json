@@ -1,0 +1,146 @@
+{
+  "type": [
+    "null",
+    "object"
+  ],
+  "properties": {
+    "seller_sku": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "quantity": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "price": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "product_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "business_price": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "quantity_price_type": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "quantity_lower_bound_1": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "quantity_price_1": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "quantity_lower_bound_2": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "quantity_price_2": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "quantity_lower_bound_3": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "quantity_price_3": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "quantity_lower_bound_4": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "quantity_price_4": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "quantity_lower_bound_5": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "quantity_price_5": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "progressive_price_type": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "progressive_lower_bound_1": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "progressive_price_1": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "progressive_lower_bound_2": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "progressive_price_2": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "progressive_lower_bound_3": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "progressive_price_3": {
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "type": [
+    "null",
+    "object"
+  ],
+  "properties": {
+    "return_date": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "order_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "sku": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "asin": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "fnsku": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "product_name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "quantity": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "fulfillment_center_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "detailed_disposition": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "reason": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "status": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "license_plate_number": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "customer_comments": {
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  }
+}

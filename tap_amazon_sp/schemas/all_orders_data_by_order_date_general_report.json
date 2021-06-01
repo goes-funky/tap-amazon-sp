@@ -1,0 +1,202 @@
+{
+  "type": [
+    "null",
+    "object"
+  ],
+  "properties": {
+    "amazon_order_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "merchant_order_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "purchase_date": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "last_updated_date": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "order_status": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "fulfillment_channel": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "sales_channel": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "order_channel": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "ship_service_level": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "product_name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "sku": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "asin": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "number_of_items": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "item_status": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "quantity": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "currency": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "item_price": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "item_tax": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "shipping_price": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "shipping_tax": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "gift_wrap_price": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "gift_wrap_tax": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "item_promotion_discount": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "ship_promotion_discount": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "ship_city": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "ship_state": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "ship_postal_code": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "ship_country": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "promotion_ids": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "is_business_order": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "purchase_order_number": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "price_designation": {
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  }
+}

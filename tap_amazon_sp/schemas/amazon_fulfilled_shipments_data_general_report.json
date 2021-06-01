@@ -1,0 +1,301 @@
+{
+  "type": [
+    "null",
+    "object"
+  ],
+  "properties": {
+    "amazon_order_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "merchant_order_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "shipment_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "shipment_item_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "amazon_order_item_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "merchant_order_item_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "purchase_date": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "payments_date": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "shipment_date": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "reporting_date": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "buyer_email": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "buyer_name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "buyer_phone_number": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "sku": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "product_name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "quantity_shipped": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "currency": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "item_price": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "item_tax": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "shipping_price": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "shipping_tax": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "gift_wrap_price": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "gift_wrap_tax": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "ship_service_level": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "recipient_name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "ship_address_1": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "ship_address_2": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "ship_address_3": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "ship_city": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "ship_state": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "ship_postal_code": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "ship_country": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "ship_phone_number": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "bill_address_1": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "bill_address_2": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "bill_address_3": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "bill_city": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "bill_state": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "bill_postal_code": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "bill_country": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "item_promotion_discount": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "ship_promotion_discount": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "carrier": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "tracking_number": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "estimated_arrival_date": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "fulfillment_center_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "fulfillment_channel": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "sales_channel": {
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "type": [
+    "null",
+    "object"
+  ],
+  "properties": {
+    "seller_sku": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "fulfillment_channel_sku": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "asin": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "condition_type": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "country": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "quantity_for_local_fulfillment": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    }
+  }
+}

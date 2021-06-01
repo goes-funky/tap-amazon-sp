@@ -1,0 +1,228 @@
+{
+  "type": [
+    "null",
+    "object"
+  ],
+  "properties": {
+    "settlement_id": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "settlement_start_date": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "settlement_end_date": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "deposit_date": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "total_amount": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "currency": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "transaction_type": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "order_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "merchant_order_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "adjustment_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "shipment_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "marketplace_name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "shipment_fee_type": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "shipment_fee_amount": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "order_fee_type": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "order_fee_amount": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "fulfillment_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "posted_date": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "order_item_code": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "merchant_order_item_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "merchant_adjustment_item_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "sku": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "quantity_purchased": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "price_type": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "price_amount": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "item_related_fee_type": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "item_related_fee_amount": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "misc_fee_amount": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "other_fee_amount": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "other_fee_reason_description": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "promotion_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "promotion_type": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "promotion_amount": {
+      "type": [
+        "null",
+        "number"
+      ]
+    },
+    "direct_payment_type": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "direct_payment_amount": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "other_amount": {
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "type": [
+    "null",
+    "object"
+  ],
+  "properties": {
+    "snapshot_date": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "fnsku": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "sku": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "product_name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "quantity": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "fulfillment_center_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "detailed_disposition": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "country": {
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  }
+}

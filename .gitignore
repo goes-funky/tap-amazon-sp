@@ -101,3 +101,7 @@ rsa-key
 tags
 singer-check-tap-data
 state.json
+
+tap_amazon_sp/sample
+tap_amazon_sp/test_files
+.idea
