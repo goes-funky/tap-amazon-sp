@@ -34,7 +34,7 @@ class Report(Stream):
         headers = self.clean_headers(csv_string[0])
         yield from csv.DictReader(csv_string[1:], fieldnames=headers, dialect="excel-tab")
 
-    def wait_on_report_finished(self, report_id):
+    def wait_on_report_finished(self, report_id, throw_on_fatal=True):
         wait_time = 15
         while True:
             time.sleep(wait_time)
@@ -49,7 +49,10 @@ class Report(Stream):
             elif status in ["FATAL", "CANCELLED"]:
                 err_message = "Report processing failed with: " + status + " status, please try again later. Possible reason short date range."
                 singer.log_warning(err_message)
-                raise Exception(err_message)
+                if throw_on_fatal:
+                    raise Exception(err_message)
+                else:
+                    return None
 
     @quota_error_handling
     def client_wrapper(self, fnc, **kwargs):

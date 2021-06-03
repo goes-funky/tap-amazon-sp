@@ -85,7 +85,7 @@ class Stream:
                                         self.name,
                                         bookmark_key or self.replication_key)
                     or Context.config["start_date"])
-        return utils.strptime_with_tz(bookmark)
+        return bookmark if bookmark_key else utils.strptime_with_tz(bookmark)
 
     def update_bookmark(self, bookmark_value, bookmark_key=None):
         # NOTE: Bookmarking can never be updated to not get the most

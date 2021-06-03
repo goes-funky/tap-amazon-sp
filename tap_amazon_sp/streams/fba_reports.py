@@ -3,6 +3,8 @@ from datetime import datetime
 
 import pytz
 from dateutil.relativedelta import relativedelta
+from singer import utils
+
 from tap_amazon_sp.streams.report import Report
 
 """
@@ -41,12 +43,13 @@ class FBAReport(Report):
 
     def sync(self):
         last_imported_datetime = self.get_bookmark(bookmark_key="last_imported_datetime")
-        date_ranges = split_dates(last_imported_datetime)
+        date_ranges = split_dates(utils.strptime_with_tz(last_imported_datetime))
         for date_range in date_ranges:
             report_id = self.create_report(data_start_time=date_range["start_date"], data_end_time=date_range["end_date"])
-            document_id = self.wait_on_report_finished(report_id)
-            yield from self.push_document(document_id)
-            last_imported_datetime = date_range["end_date"]
+            document_id = self.wait_on_report_finished(report_id, throw_on_fatal=False)
+            if document_id:
+                yield from self.push_document(document_id)
+                last_imported_datetime = date_range["end_date"]
         self.update_bookmark(last_imported_datetime, "last_imported_datetime")
 
 
