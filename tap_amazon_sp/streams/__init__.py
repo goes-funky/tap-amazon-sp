@@ -9,9 +9,9 @@ from tap_amazon_sp.streams.transaction_report import TransactionReport
 
 
 models = [
-    # OrdersData,
-    # OrderItems,
-    # TransactionReport,
+    OrdersData,
+    OrderItems,
+    TransactionReport,
 
     # OpenListingsDataReport,
     # MerchantListingsAllDataReport,
@@ -22,8 +22,8 @@ models = [
     # SellerFeedbackDataReport,
 
 
-    # V2SettlementReportDataReport,
-    # V2SettlementReportDataV2Report,
+    V2SettlementReportDataReport,
+    V2SettlementReportDataV2Report,
 
 
     AmazonFulfilledShipmentsDataGeneralReport,
