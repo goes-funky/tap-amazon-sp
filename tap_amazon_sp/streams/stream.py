@@ -4,7 +4,7 @@ import functools
 import backoff
 import singer
 from sp_api.api import Sellers
-from sp_api.base import SellingApiRequestThrottledException, Marketplaces, SellingApiServerException
+from sp_api.base import SellingApiRequestThrottledException, Marketplaces, SellingApiServerException, SellingApiForbiddenException
 
 from tap_amazon_sp.context import Context
 from singer import metrics, utils
@@ -35,6 +35,14 @@ def quota_error_handling(fnc):
                           SellingApiRequestThrottledException,
                           # No jitter as we want a constant value
                           jitter=None,
+                          max_value=32
+                          )
+    @backoff.on_exception(backoff.expo,
+                          SellingApiForbiddenException,
+                          # No jitter as we want a constant value
+                          jitter=None,
+                          on_backoff=retry_handler,
+                          max_tries=MAX_RETRIES,
                           max_value=32
                           )
     @functools.wraps(fnc)
@@ -71,11 +79,11 @@ class Stream:
     def set_marketplace(self, market_place):
         self.market_place = market_place
 
-    def get_bookmark(self):
+    def get_bookmark(self, bookmark_key=None):
         bookmark = (singer.get_bookmark(Context.state,
                                         # name is overridden by some substreams
                                         self.name,
-                                        self.replication_key)
+                                        bookmark_key or self.replication_key)
                     or Context.config["start_date"])
         return utils.strptime_with_tz(bookmark)
 
