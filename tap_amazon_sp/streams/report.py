@@ -90,6 +90,6 @@ class Report(Stream):
 
     def clean_TSV_headers(self, headers):
         new_headers = []
-        for header in headers.split(","):
-            new_headers.append(header.replace(" ", "_").replace("/", "_").replace("\"", ""))
+        for header in headers.split("\t"):
+            new_headers.append(header.replace(" ", "_").replace("-", "_").replace("/", "_").replace("\"", "").replace("(", "").replace(")", "").lower())
         return new_headers
