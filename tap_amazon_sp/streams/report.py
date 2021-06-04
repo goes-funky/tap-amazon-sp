@@ -31,7 +31,7 @@ class Report(Stream):
     def push_document(self, document_id):
         document_obj = self.client_wrapper(self.report_resource.get_report_document, document_id=document_id, decrypt=True).payload
         csv_string = document_obj["document"].splitlines()
-        headers = self.clean_headers(csv_string[0])
+        headers = self.clean_TSV_headers(csv_string[0])
         yield from csv.DictReader(csv_string[1:], fieldnames=headers, dialect="excel-tab")
 
     def wait_on_report_finished(self, report_id, throw_on_fatal=True):
@@ -84,6 +84,12 @@ class Report(Stream):
 
     def clean_headers(self, headers):
         new_headers = []
-        for header in headers.split("\t"):
-            new_headers.append(header.replace(" ", "_").replace("-", "_").replace("/", "_").replace("\"", "").replace("(", "").replace(")", "").lower())
+        for header in headers.split(","):
+            new_headers.append(header.replace(" ", "_").replace("/", "_").replace("\"", ""))
+        return new_headers
+
+    def clean_TSV_headers(self, headers):
+        new_headers = []
+        for header in headers.split(","):
+            new_headers.append(header.replace(" ", "_").replace("/", "_").replace("\"", ""))
         return new_headers
