@@ -107,8 +107,7 @@
       "type": [
         "null",
         "string"
-      ],
-      "format": "date"
+      ]
     },
     "posted_date_time": {
       "type": [
