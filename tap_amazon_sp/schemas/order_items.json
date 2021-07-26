@@ -1,13 +1,73 @@
 {
   "type": "object",
   "properties": {
+    "PointsGranted": {
+      "type": [
+        "null",
+        "object"
+      ],
+      "properties": {
+        "PointsNumber": {
+          "type": [
+            "null",
+            "integer"
+          ]
+        },
+        "PointsMonetaryValue": {
+          "type": [
+            "null",
+            "object"
+          ],
+          "properties": {
+            "CurrencyCode": {
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            "Amount": {
+              "type": [
+                "null",
+                "number"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "PromotionIds": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
     "AmazonOrderId": {
       "type": [
         "null",
         "string"
       ]
     },
+    "ScheduledDeliveryStartDate": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "ScheduledDeliveryEndDate": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
     "ASIN": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "PriceDesignation": {
       "type": [
         "null",
         "string"
@@ -23,6 +83,54 @@
       "type": [
         "null",
         "string"
+      ]
+    },
+    "ConditionNote": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "ConditionId": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "ConditionSubtypeId": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "IossNumber": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "StoreChainStoreId": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "DeemedResellerCategory": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "SerialNumberRequired": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "IsTransparency": {
+      "type": [
+        "null",
+        "boolean"
       ]
     },
     "QuantityOrdered": {
@@ -83,7 +191,127 @@
         }
       }
     },
+    "ShippingTax": {
+      "type": [
+        "null",
+        "object"
+      ],
+      "properties": {
+        "CurrencyCode": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "Amount": {
+          "type": [
+            "null",
+            "number"
+          ]
+        }
+      }
+    },
+    "ShippingDiscount": {
+      "type": [
+        "null",
+        "object"
+      ],
+      "properties": {
+        "CurrencyCode": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "Amount": {
+          "type": [
+            "null",
+            "number"
+          ]
+        }
+      }
+    },
+    "ShippingDiscountTax": {
+      "type": [
+        "null",
+        "object"
+      ],
+      "properties": {
+        "CurrencyCode": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "Amount": {
+          "type": [
+            "null",
+            "number"
+          ]
+        }
+      }
+    },
     "ItemPrice": {
+      "type": [
+        "null",
+        "object"
+      ],
+      "properties": {
+        "CurrencyCode": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "Amount": {
+          "type": [
+            "null",
+            "number"
+          ]
+        }
+      }
+    },
+    "ShippingPrice": {
+      "type": [
+        "null",
+        "object"
+      ],
+      "properties": {
+        "CurrencyCode": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "Amount": {
+          "type": [
+            "null",
+            "number"
+          ]
+        }
+      }
+    },
+    "CODFee": {
+      "type": [
+        "null",
+        "object"
+      ],
+      "properties": {
+        "CurrencyCode": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "Amount": {
+          "type": [
+            "null",
+            "number"
+          ]
+        }
+      }
+    },
+    "CODFeeDiscount": {
       "type": [
         "null",
         "object"

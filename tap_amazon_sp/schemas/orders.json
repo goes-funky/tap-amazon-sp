@@ -1,6 +1,206 @@
 {
   "type": "object",
   "properties": {
+    "DefaultShipFromLocationAddress": {
+      "type": [
+        "null",
+        "object"
+      ],
+      "properties": {
+        "Name": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "AddressLine1": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "AddressLine2": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "AddressLine3": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "City": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "County": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "District": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "StateOrRegion": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "Municipality": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "PostalCode": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "CountryCode": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "Phone": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "AddressType": {
+          "type": [
+            "null",
+            "string"
+          ]
+        }
+      }
+    },
+    "FulfillmentInstruction": {
+      "type": [
+        "null",
+        "object"
+      ],
+      "properties": {
+        "FulfillmentSupplySourceId": {
+          "type": [
+            "null",
+            "string"
+          ]
+        }
+      }
+    },
+    "MarketplaceTaxInfo": {
+      "type": [
+        "null",
+        "object"
+      ],
+      "properties": {
+        "TaxClassifications": {
+          "type": [
+            "null",
+            "string"
+          ]
+        }
+      }
+    },
+    "LatestDeliveryDate": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "EarliestDeliveryDate": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "IsEstimatedShipDateSet": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "PromiseResponseDueDate": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "ReplacedOrderId": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "CbaDisplayableShippingLabel": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "EasyShipShipmentStatus": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "ShipmentServiceLevelCategory": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "PaymentExecutionDetail": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "FulfillmentChannel": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "SalesChannel": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "OrderChannel": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "ShipServiceLevel": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "SellerDisplayName": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
     "AmazonOrderId": {
       "type": [
         "null",
@@ -53,7 +253,7 @@
     "IsReplacementOrder": {
       "type": [
         "null",
-        "string"
+        "boolean"
       ]
     },
     "IsSoldByAB": {
