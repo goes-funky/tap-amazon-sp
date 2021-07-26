@@ -253,7 +253,7 @@
     "IsReplacementOrder": {
       "type": [
         "null",
-        "boolean"
+        "string"
       ]
     },
     "IsSoldByAB": {
