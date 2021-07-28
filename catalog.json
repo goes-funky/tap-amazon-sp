@@ -1,0 +1,727 @@
+{
+  "streams": [
+
+    {
+      "stream": "orders",
+      "tap_stream_id": "orders",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "DefaultShipFromLocationAddress": {
+            "type": [
+              "null",
+              "object"
+            ],
+            "properties": {
+              "Name": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              "AddressLine1": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              "AddressLine2": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              "AddressLine3": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              "City": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              "County": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              "District": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              "StateOrRegion": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              "Municipality": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              "PostalCode": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              "CountryCode": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              "Phone": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              "AddressType": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              }
+            }
+          },
+          "FulfillmentInstruction": {
+            "type": [
+              "null",
+              "object"
+            ],
+            "properties": {
+              "FulfillmentSupplySourceId": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              }
+            }
+          },
+          "MarketplaceTaxInfo": {
+            "type": [
+              "null",
+              "object"
+            ],
+            "properties": {
+              "TaxClassifications": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              }
+            }
+          },
+          "LatestDeliveryDate": {
+            "type": [
+              "null",
+              "string"
+            ],
+            "format": "date-time"
+          },
+          "EarliestDeliveryDate": {
+            "type": [
+              "null",
+              "string"
+            ],
+            "format": "date-time"
+          },
+          "IsEstimatedShipDateSet": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "PromiseResponseDueDate": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "ReplacedOrderId": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "CbaDisplayableShippingLabel": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "EasyShipShipmentStatus": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "ShipmentServiceLevelCategory": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "PaymentExecutionDetail": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "FulfillmentChannel": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "SalesChannel": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "OrderChannel": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "ShipServiceLevel": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "SellerDisplayName": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "AmazonOrderId": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "SellerOrderId": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "EarliestShipDate": {
+            "type": [
+              "null",
+              "string"
+            ],
+            "format": "date-time"
+          },
+          "IsBusinessOrder": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "IsGlobalExpressEnabled": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "IsISPU": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "IsPremiumOrder": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "IsPrime": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "IsReplacementOrder": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "IsSoldByAB": {
+            "type": [
+              "null",
+              "boolean"
+            ]
+          },
+          "LastUpdateDate": {
+            "type": [
+              "null",
+              "string"
+            ],
+            "format": "date-time"
+          },
+          "LatestShipDate": {
+            "type": [
+              "null",
+              "string"
+            ],
+            "format": "date-time"
+          },
+          "PurchaseDate": {
+            "type": [
+              "null",
+              "string"
+            ],
+            "format": "date-time"
+          },
+          "MarketplaceId": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "NumberOfItemsShipped": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "NumberOfItemsUnshipped": {
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "OrderStatus": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "OrderTotal": {
+            "type": [
+              "null",
+              "object"
+            ],
+            "properties": {
+              "CurrencyCode": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              "Amount": {
+                "type": [
+                  "null",
+                  "number"
+                ]
+              }
+            }
+          },
+          "OrderType": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "PaymentMethod": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "PaymentMethodDetails": {
+            "items": {
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            "type": [
+              "null",
+              "array"
+            ]
+          }
+        }
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "table-key-properties": [
+              "AmazonOrderId"
+            ],
+            "selected": true,
+            "forced-replication-method": "INCREMENTAL",
+            "valid-replication-keys": [
+              "PurchaseDate"
+            ]
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "DefaultShipFromLocationAddress"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "FulfillmentInstruction"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "MarketplaceTaxInfo"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "LatestDeliveryDate"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "EarliestDeliveryDate"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "IsEstimatedShipDateSet"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "PromiseResponseDueDate"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "ReplacedOrderId"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "CbaDisplayableShippingLabel"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "EasyShipShipmentStatus"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "ShipmentServiceLevelCategory"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "PaymentExecutionDetail"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "FulfillmentChannel"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "SalesChannel"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "OrderChannel"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "ShipServiceLevel"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "SellerDisplayName"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "AmazonOrderId"
+          ],
+          "metadata": {
+            "inclusion": "automatic"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "SellerOrderId"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "EarliestShipDate"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "IsBusinessOrder"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "IsGlobalExpressEnabled"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "IsISPU"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "IsPremiumOrder"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "IsPrime"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "IsReplacementOrder"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "IsSoldByAB"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "LastUpdateDate"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "LatestShipDate"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "PurchaseDate"
+          ],
+          "metadata": {
+            "inclusion": "automatic"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "MarketplaceId"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "NumberOfItemsShipped"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "NumberOfItemsUnshipped"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "OrderStatus"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "OrderTotal"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "OrderType"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "PaymentMethod"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "PaymentMethodDetails"
+          ],
+          "metadata": {
+            "inclusion": "available"
+          }
+        }
+      ],
+      "key_properties": [
+        "AmazonOrderId"
+      ],
+      "replication_key": "PurchaseDate",
+      "replication_method": "INCREMENTAL"
+    }
+  ]
+}
+

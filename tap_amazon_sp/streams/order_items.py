@@ -8,7 +8,7 @@ from sp_api.api import Orders
 class OrderItems(ChildStream):
     name = "order_items"
     replication_method = "INCREMENTAL"
-    replication_key = 'PurchaseDate'
+    replication_key = 'LastUpdateDate'
     parent_name = 'orders'
     parent_id_name = "AmazonOrderId"
     key_properties = ["OrderItemId"]
