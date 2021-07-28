@@ -74,6 +74,7 @@ class Stream:
     # Status parameter override option
     status_key = None
     skip_hour = False
+    logger = singer.get_logger()
     market_place = Marketplaces.US
 
     def set_marketplace(self, market_place):
@@ -104,33 +105,22 @@ class Stream:
     def sync(self):
         updated_at_min = self.get_bookmark()
 
-        # subtracting two minutes because amazon complains if its really close to now
-        stop_time = singer.utils.now().replace(microsecond=0) - datetime.timedelta(minutes=2)
+        next_token = None
+        new_bookmark = utils.strftime(updated_at_min, utils.DATETIME_PARSE)
+        self.logger.info("Getting data from " + new_bookmark)
+        page = 1
+        while True:
+            objects, next_token = self.call_api(start=updated_at_min, nextToken=next_token)
+            self.logger.info("Retrieved page " + str(page))
+            for object in objects:
+                new_bookmark = object.get(self.replication_key, new_bookmark)
+                yield object
 
-        date_window_size = float(Context.config.get("date_window_size", DATE_WINDOW_SIZE))
-        while updated_at_min < stop_time:
-            updated_at_max = updated_at_min + datetime.timedelta(days=date_window_size)
-            if updated_at_max > stop_time:
-                updated_at_max = stop_time
-            singer.log_info("getting from %s - %s", updated_at_min,
-                            updated_at_max)
-            next_token = None
-            while True:
-                objects, next_token = self.call_api(start=updated_at_min, end=updated_at_max, nextToken=next_token)
+            if next_token is None:
+                break
+            page += 1
 
-                for object in objects:
-                    yield object
-
-                if next_token is None:
-                    break
-
-            skip_time = datetime.timedelta(seconds=1)
-            if self.skip_hour:
-                skip_time = datetime.timedelta(hours=1)
-
-            updated_at_min = updated_at_max + skip_time
-
-            self.update_bookmark(utils.strftime(updated_at_min))
+        self.update_bookmark(utils.strftime(utils.strptime_with_tz(new_bookmark) + datetime.timedelta(seconds=1), utils.DATETIME_PARSE))
 
     # implemented by each stream class, returns data and next token if there is
     @abc.abstractmethod

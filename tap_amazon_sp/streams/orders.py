@@ -11,7 +11,7 @@ class OrdersData(Stream):
     name = "orders"
     api_access_key = "Orders"
     key_properties = ["AmazonOrderId"]
-    replication_key = "PurchaseDate"
+    replication_key = "LastUpdateDate"
     replication_method = "INCREMENTAL"
 
     @quota_error_handling
@@ -30,8 +30,7 @@ class OrdersData(Stream):
     @staticmethod
     def get_query_params(kwargs):
         query_params = {
-            "CreatedAfter": kwargs["start"].replace(tzinfo=None).strftime('%Y-%m-%dT%H:%M:%S.%f%z'),
-            "CreatedBefore": kwargs["end"].replace(tzinfo=None).strftime('%Y-%m-%dT%H:%M:%S.%f%z'),
+            "LastUpdatedAfter": kwargs["start"].replace(tzinfo=None).strftime('%Y-%m-%dT%H:%M:%S.%f%z'),
         }
 
         if "nextToken" in kwargs and kwargs["nextToken"] is not None:
