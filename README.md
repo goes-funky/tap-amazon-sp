@@ -1,3 +1,4 @@
+# OLD TAP, REPLACED BY [tap-amazon-seller-point](https://github.com/goes-funky/tap-amazon-seller-point)
 # tap-amazon-sp
 
 This is a [Singer](https://singer.io) tap that produces JSON-formatted data
